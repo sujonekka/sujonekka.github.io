@@ -1,0 +1,279 @@
+
+.loader{
+    height:100%;
+    width:100%;
+    background:white;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
+
+.loader .inner{
+    width:100%;
+    height:100%;
+    background:url(../img/loader.gif)center center no-repeat;
+
+}
+.overlay{
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0, 0.6);
+    position: absolute;
+    z-index: 3;
+}
+.slides-navigation a.prev,.slides-navigation a.next{
+    width:47px;
+    height: 47px;
+    background-size: cover;
+
+}
+.titlemessage{
+    position: absolute;
+    width:100%;
+    height:250px;
+    z-index:5;
+    top:40%;
+    text-align:center;
+}
+.titlemessage .heading p{
+    color:white;
+    letter-spacing: 7px;
+    font-weight: 200;
+}
+.titlemessage .heading p.main{
+    font-size: 50px;
+
+}
+
+.titlemessage .heading p.sub{
+    font-size: 25px;
+
+}
+.slides-navigation{
+    z-index: 6;
+}
+.slides-navigation a.next{
+    background-image: url('../img/icons/next.png');
+    right:20px;
+}
+.slides-navigation a.prev{
+    background-image: url('../img/icons/prev.png');
+    left:20px;
+}
+#navigation{
+    background:#E74C3C;
+    padding:20px 10px;
+
+}
+.navbar-toggler-icon{
+    background:url(../img/icons/menu.png);
+    background-size: cover;
+    
+}
+#navigation li{
+    padding:0 10px;
+}
+
+#navigation li a{
+    color:white;
+}
+.navbar-brand,.navbar-brand:hover{
+    color:white;
+}
+
+
+
+
+
+.section{
+    padding:100px 0;
+}
+.skillsSection{
+    background-color: #E74C3C;
+    color:white;
+}
+
+.chart{
+    position: relative;
+    height:152px;
+    width:152px;
+    display:inline-block;
+}
+
+.chart canvas{
+    position: absolute;
+    left:0;
+    top:0;
+    
+}
+.chart .percent{
+    color:black;
+    font-size:35px;
+    line-height: 152px;
+}
+
+.chart .percent:after{
+    content:'%';
+}
+.squareItem{
+    position: relative;
+}
+.squareInnerContainer{
+    border:2px solid black;
+    padding:50px 15px 35px;
+    border-top:none;
+    text-align: center;
+}
+.squareInnerContainer:before,
+.squareInnerContainer:after{
+    
+    content:'';
+    border-bottom: 2px solid black;
+    position: absolute;
+    width:30%;
+    top:0;
+}
+.squareInnerContainer:before{
+    left:0;
+}
+
+.squareInnerContainer:after{
+    right:0;
+}
+.squareIcon{
+    position: absolute;
+    left:42%;
+    top:-30px;
+    font-size:45px;
+}
+.squareContent h2{
+    color:#E74C3C;
+}
+.contactSection{
+    background:#E74C3C;
+    color:white;
+}
+.space p,h3{
+   
+    letter-spacing: 3px;
+    
+    
+}
+#button{
+    background:none;
+    border:1px solid white;
+    color:white;
+    margin-top:10px;
+    transition: .7s;
+}
+#button:hover{
+    background:white;
+    color:black;
+  
+}
+.heading{
+    text-align:center;
+    padding-bottom: 40px;
+}
+.filter{
+    text-align:center;
+    width:100%;
+}
+.filter li{
+    display: inline-block;
+    padding:5px;
+}
+
+.filter li a{
+    color:black;
+    border:1px solid black;
+    padding:10px 20px;
+}
+.filter .current{
+    background:#E74C3C;
+    color: white;
+}
+.itemsContainer{
+    width:100%;
+}
+.items li{
+    display:inline-block;
+    padding: 5px;
+}
+.items .icons{
+    position: absolute;
+    width:90px;
+    height:40px;
+    margin:-20px auto 0 -45px;
+    top:50%;
+    left:50%;
+    text-align:center;
+    z-index: 5;
+}
+.items a{
+    background:#E74C3C;
+    color:white;
+    width:40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    line-height: 40px;
+    font-weight: bold;
+    transition: all 0.2s linear,1s;
+}
+.items .imgOverlay{
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0, 0.5);
+    position: absolute;
+    left:0;
+    top:0;
+    opacity: 0;
+}
+.items .imgOverlay:hover{
+    opacity: 1;
+    transition: all 0.2s linear,1s;
+}
+.items .searchButton{
+    float:left;
+    left: -200px;
+}
+
+.items .projectLink{
+    float:right;
+    right: -200px;
+}
+
+.items .item{
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.items .item:hover .searchButton{
+    left: 0;
+}
+
+.items .item:hover .projectLink{
+    right: 0;
+}
+
+.items .item:hover img{
+    transform:scale(1.05,1.05);
+    transition: all 0.2s linear,1s;
+}
+.items{
+    padding:0;
+}
+.footer{
+    background:#161C27;
+    color:white;
+    text-align: center;
+    
+    
+}
+.footer p{
+    padding:20px 0;
+}
